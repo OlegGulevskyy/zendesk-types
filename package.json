@@ -1,0 +1,12 @@
+{
+	"name": "zendesk-types",
+	"version": "1.0.0",
+	"description": "Unofficial Zendesk API types",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"types": "./lib/index.d.ts",
+	"author": "oleggulevskyy@gmail.com",
+	"license": "MIT"
+}
