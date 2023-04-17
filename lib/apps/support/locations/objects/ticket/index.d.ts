@@ -1,5 +1,6 @@
 import { Group } from "../group";
 import { User } from "../user";
+import { Comment } from "../comment";
 
 export type Ticket = {
   createdAt: string;
@@ -19,7 +20,7 @@ export type Ticket = {
   updatedAt: string;
   viewers: unknown;
   brand: unknown;
-  comment: unknown;
+  comment: Comment;
   form: unknown;
   editor: unknown;
   organization: unknown;
@@ -28,9 +29,9 @@ export type Ticket = {
   collaborators: unknown;
   followers: unknown;
   assignee: {
-		group: Group;
-		user: User;
-	};
+    group: Group;
+    user: User;
+  };
   requester: User;
-  comments: unknown;
+  comments: Comment[];
 };
