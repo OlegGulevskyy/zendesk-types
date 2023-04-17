@@ -1,6 +1,8 @@
 import { NestedPaths } from "../utilities/utilities";
-import { GetData, GettableLocations } from "./get";
+import { GetData } from "./get";
 import { Metadata } from "../metadata/metadata";
+
+import { Locations } from "../apps/support/locations";
 
 type ZendeskApiResponse<U> = U & {
   errors: {}; // need to reproduce errors somehow to property type it
@@ -9,7 +11,7 @@ type ZendeskApiResponse<U> = U & {
 export type ZafClient = {
   invoke: (cmd: string, arg: any) => void;
 
-  get: <Path extends NestedPaths<GettableLocations>>(
+  get: <Path extends NestedPaths<Locations>>(
     key: Path
   ) => Promise<ZendeskApiResponse<GetData<Path>>>;
 

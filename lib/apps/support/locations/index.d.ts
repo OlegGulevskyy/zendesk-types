@@ -1,7 +1,7 @@
-import { NewTicketSidebar } from "./new_ticket_sidebar";
-import { TicketSidebar } from "./ticket_sidebar";
+import { User } from "./objects/user/";
+import { Ticket } from "./objects/ticket";
 
 export type Locations = {
-  ["ticket_sidebar"]: TicketSidebar;
-  ["new_ticket_sidebar"]: NewTicketSidebar;
+  ticket: Ticket;
+  currentUser: User;
 };
