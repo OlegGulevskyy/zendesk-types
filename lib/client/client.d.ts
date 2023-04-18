@@ -15,7 +15,7 @@ export type ZafClient = {
     key: Path
   ) => Promise<ZendeskApiResponse<GetData<Path>>>;
 
-  metadata: <U>() => Metadata<U>;
+  metadata: <U>() => Promise<Metadata<U>>;
   request: <U>(data: Object) => Promise<U>;
   on: (eventName: string, listener: (...args: any) => any) => void;
 };
