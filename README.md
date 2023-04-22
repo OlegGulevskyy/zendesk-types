@@ -1,6 +1,7 @@
 ## What is it?
 
 This is unofficial Zendesk API typings, that is scrambled from the documentation + tested during the development.
+GitHub Repository -- https://github.com/OlegGulevskyy/zendesk-types
 
 ## Why?
 
@@ -56,3 +57,4 @@ Simple install the package from `npm`, using any package installer of your choic
 The reason it has to be included manually in the `tsconfig.json`, is because it does not distrubute under any organisation, so was not included into DefinitelyTyped repository.
 
 Any PR / help is welcome!
+https://github.com/OlegGulevskyy/zendesk-types
