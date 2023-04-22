@@ -1,11 +1,13 @@
 {
 	"name": "zendesk-types",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Unofficial Zendesk API types",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
+	"keywords": [
+		"zendesk-types",
+		"zendesk",
+		"ZAF",
+		"zendesk-client"
+	],
 	"types": "./lib/index.d.ts",
 	"author": "oleggulevskyy@gmail.com",
 	"license": "MIT"
