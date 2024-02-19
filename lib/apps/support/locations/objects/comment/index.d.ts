@@ -16,3 +16,10 @@ export type Comment = {
   };
   author: User;
 };
+
+export type CommentResponse = {
+  attachments: unknown[];
+  text: string;
+  type: "publicReply" | "internalNote";
+  useRichText: boolean;
+};
