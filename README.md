@@ -13,6 +13,7 @@ This is a work in progress, and I have no intentions spending a full day scrapin
 If you notice a missing type, please raise an issue / PR with the addition. I am adding types "on the go", as soon as I notice something is missing during my own development cycle.
 My aim, however, is to make it complete types package, so eventually I will get there.
 
+
 ## How do I include this in my project?
 
 Simple install the package from `npm`, using any package installer of your choice (`pnpm`, `npm` etc):
