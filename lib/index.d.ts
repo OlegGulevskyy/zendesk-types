@@ -1,9 +1,6 @@
 import type { ZafClient } from "./client/client";
+export { ZafClient };
 
-declare global {
-  interface Window {
-    ZAFClient: {
-      init: () => ZafClient;
-    };
-  }
-}
+export type ZAFClient = {
+  inot: () => ZafClient;
+};
