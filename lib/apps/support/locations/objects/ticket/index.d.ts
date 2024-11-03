@@ -2,6 +2,7 @@ import { Group } from "../group";
 import { User } from "../user";
 import { Comment, CommentResponse } from "../comment";
 import { Via } from "../via";
+import { Organization } from "../user/organizations";
 
 export type Ticket = {
   createdAt: string;
@@ -24,7 +25,7 @@ export type Ticket = {
   comment: Comment | CommentResponse;
   form: unknown;
   editor: unknown;
-  organization: unknown;
+  organization: Organization;
   via: Via;
   conversation: unknown;
   collaborators: unknown;
